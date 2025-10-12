@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "coolvetica";
+  src: url(./coolvetica/Coolvetica\ Rg\ Cond.otf);
+}
+body {
+  background-color: rgb(3, 3, 53);
+  color: white;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.div3 {
+  grid-column: span 7 / span 7;
+
+  display: flex;
+  gap: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.div4 {
+  grid-column: span 3 / span 3;
+  grid-row: span 4 / span 4;
+  grid-column-start: 6;
+  grid-row-start: 3;
+}
+
+.div5 {
+  grid-column: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  margin-top: 30px;
+}
+
+.div6 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 4;
+
+  font-size: 200%;
+  text-align: center;
+  margin-top: 30px;
+}
+.botoes {
+  text-decoration: none;
+  color: white;
+}
+button {
+  width: 75px;
+  height: 40px;
+  background-color: transparent;
+  font-family: "coolvetica";
+  font-size: 200%;
+  border: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.title {
+  font-size: 250%;
+  text-align: center;
+}
+
+.possibility_inc:hover {
+  color: red;
+  transition: 1s ease;
+}
+.possibility_inc {
+  color: white;
+  transition: 1s ease;
+}
+button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
+}
