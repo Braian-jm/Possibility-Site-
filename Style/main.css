@@ -94,7 +94,7 @@ body {
   text-decoration: none;
   color: white;
 }
-button {
+.bt {
   width: 75px;
   height: 40px;
   background-color: transparent;
@@ -120,12 +120,12 @@ button {
   transition: 1s ease;
 }
 
-button {
+.bt {
   filter: drop-shadow(0 0 10px #80838400) drop-shadow(0 0 20px #00aaff00);
   transition: filter 0.3s ease;
 }
 
-button:hover {
+.bt:hover {
   filter: drop-shadow(0 0 15px #ff0000) drop-shadow(0 0 30px #ff0000)
     drop-shadow(0 0 45px #ff0000);
 }
@@ -186,29 +186,78 @@ button:hover {
 .about {
   position: relative;
   width: 100vw;
-  height: 1080px;
+  height: 2100px;
   display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  align-items: top;
   flex-wrap: wrap;
   background-color: black;
   color: white;
   text-decoration: none;
+  flex-direction: column;
+  align-items: center;
 }
 .content-about {
   flex-direction: column;
   border: 3px solid red;
-  width: 80%;
-  height: 25vh;
+  width: 60%;
+  height: 50vh;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-family: coolvetica;
+  background-image: url("./img/Empresa\ funcionarios\ foto\ feliz.jpg");
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: rgba(0, 0, 0, 10);
+  margin-top: 200px;
 }
 .text {
   font-size: 20px;
   margin-top: 50px;
   line-height: 30px;
+}
+.botton {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(10, 10, 10);
+  border-top-style: dashed;
+  border-top: 3px solid red;
+}
+
+.nos {
+  margin-top: 100px;
+  display: flex;
+  width: 80%;
+  height: 40%;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  border: 3px solid red;
+}
+.agente {
+  margin-left: 0;
+  width: auto;
+  height: auto;
+  border: 3px solid green;
+  padding: 50px;
+}
+.nos_bt {
+  margin-left: 0;
+  width: auto;
+  height: auto;
+  border: 3px solid green;
+  padding: 50px;
+}
+.bts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+.agenti {
+  display: flex;
+  flex-direction: row;
 }
