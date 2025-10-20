@@ -270,6 +270,44 @@ body {
 .selected {
   color: white;
   border: 3px solid black;
-  border-image: linear-gradient(135deg, red 50%, transparent 50%) 1;
+  animation-name: border_generate;
+  animation-duration: 0.5s;
   transition: color 0.5s ease;
+  border-image: linear-gradient(135deg, red 50%, transparent 50%) 1;
+}
+
+@keyframes border_generate {
+  0% {
+    border-image: linear-gradient(135deg, red 0%, transparent 50%) 1;
+  }
+  10% {
+    border-image: linear-gradient(135deg, red 5%, transparent 50%) 1;
+  }
+  20% {
+    border-image: linear-gradient(135deg, red 10%, transparent 50%) 1;
+  }
+  30% {
+    border-image: linear-gradient(135deg, red 15%, transparent 50%) 1;
+  }
+  40% {
+    border-image: linear-gradient(135deg, red 20%, transparent 50%) 1;
+  }
+  50% {
+    border-image: linear-gradient(135deg, red 25%, transparent 50%) 1;
+  }
+  60% {
+    border-image: linear-gradient(135deg, red 30%, transparent 50%) 1;
+  }
+  70% {
+    border-image: linear-gradient(135deg, red 35%, transparent 50%) 1;
+  }
+  80% {
+    border-image: linear-gradient(135deg, red 40%, transparent 50%) 1;
+  }
+  90% {
+    border-image: linear-gradient(135deg, red 45%, transparent 50%) 1;
+  }
+  100% {
+    border-image: linear-gradient(135deg, red 50%, transparent 50%) 1;
+  }
 }
