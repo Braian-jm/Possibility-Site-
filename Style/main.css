@@ -24,6 +24,7 @@ body {
   grid-template-rows: repeat(7, 1fr);
   gap: 8px;
   background-image: linear-gradient(0deg, rgb(0, 0, 15), rgb(0, 0, 37));
+  width: 100vw;
 }
 
 .img {
@@ -40,6 +41,7 @@ body {
   justify-content: center;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.048);
+  width: 100vw;
 }
 .buttons {
   width: 50%;
@@ -185,7 +187,7 @@ body {
 
 .content-about {
   flex-direction: column;
-  border: 3px solid red;
+  border: 3px solid rgba(255, 0, 0, 0.178);
   width: 60%;
   height: 50vh;
   text-align: center;
@@ -193,16 +195,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   font-family: coolvetica;
-  background-image: url("./img/Empresa\ funcionarios\ foto\ feliz.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/logotipo.jpeg");
   background-attachment: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: rgba(0, 0, 0, 10);
+
   margin-top: 200px;
 }
 .about {
   position: relative;
   width: 100vw;
-  height: 2100px;
+  height: 1440px;
   display: flex;
   text-align: center;
   align-items: top;
@@ -217,13 +221,18 @@ body {
   font-size: 20px;
   margin-top: 50px;
   line-height: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
 .botton {
-  width: 100%;
-  height: 10vh;
+  width: 100vw;
+  height: 20vh;
   background-color: rgb(10, 10, 10);
   border-top-style: dashed;
   border-top: 3px solid red;
+  display: flex;
+  justify-content: center;
 }
 
 .agente {
@@ -247,6 +256,7 @@ body {
   color: rgba(255, 255, 255, 0.356);
   font-size: 150%;
   border: 3px solid black;
+  transition: transform 0.2s ease;
 }
 .nos {
   display: flex;
@@ -266,6 +276,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2 ease;
+  font-size: 125%;
 }
 .selected {
   color: white;
@@ -274,6 +286,8 @@ body {
   animation-duration: 0.5s;
   transition: color 0.5s ease;
   border-image: linear-gradient(135deg, red 50%, transparent 50%) 1;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 @keyframes border_generate {
@@ -310,4 +324,20 @@ body {
   100% {
     border-image: linear-gradient(135deg, red 50%, transparent 50%) 1;
   }
+}
+
+.nos_bt:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.content_bot {
+  width: 75%;
+  border-bottom: 2px solid rgb(112, 112, 112);
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: end;
 }
